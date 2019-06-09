@@ -11,7 +11,7 @@ results = []
 system('clear')
 BLUE, RED, WHITE, YELLOW, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;32m', '\033[0m'
 def search():
-    inputfil = raw_input("Type the path of file containing a list of emails: ")
+    inputfil = raw_input("Type the path of file containing a list of emails:mihalikovad72@gmail.com ")
     with open(inputfil) as inputfile:
         for line in inputfile:
             results.append(line.strip())
@@ -25,7 +25,7 @@ def search():
             stdout.write(RED + "[!] NOTFD - [" + i + "]" + BLUE + " {line " + str(count) + "}\n" + END)
 
 def single():
-    ema = raw_input("Type the email to search: ")
+    ema = raw_input("Type the email to search: mihalikovad72@gmail.com")
     is_valid = validate_email(ema,verify=True)
     if str(is_valid).upper() == "TRUE":
         stdout.write(GREEN + "[*] FOUND - [" + ema + "]\n" + END)
@@ -33,8 +33,8 @@ def single():
 	stdout.write(RED + "[!] NOTFD - [" + ema + "]\n" + END)
 
 stdout.write(WHITE + '''
-By: @4w4k3
-https://github.com/Dr-HcHacker
+By: wedif77777 
+https://github.com/wedif77777
 [-                                              -]''' + RED + '''
 
                                                    
